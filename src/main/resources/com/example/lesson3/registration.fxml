@@ -18,10 +18,19 @@
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <TextField fx:id="nameTextField" layoutX="29.0" layoutY="85.0" prefWidth="300.0" promptText="Enter Name" stylesheets="@style.css" />
-      <TextField fx:id="surTextField" layoutX="29.0" layoutY="119.0" prefWidth="300.0" promptText="Enter Surname" />
-      <TextField fx:id="emailTextField" layoutX="29.0" layoutY="158.0" prefWidth="300.0" promptText="Enter email" />
-      <TextField fx:id="numberTextField" layoutX="27.0" layoutY="192.0" prefWidth="300.0" promptText="Enter Number" />
+      <TextField fx:id="nameTextField" layoutX="29.0" layoutY="85.0" prefWidth="300.0" promptText="Enter Name" stylesheets="@style.css">
+         <opaqueInsets>
+            <Insets left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets></TextField>
+      <TextField fx:id="surTextField" layoutX="29.0" layoutY="119.0" prefWidth="300.0" promptText="Enter Surname" stylesheets="@style.css" />
+      <TextField fx:id="emailTextField" layoutX="29.0" layoutY="158.0" prefWidth="300.0" promptText="Enter email" stylesheets="@style.css">
+         <opaqueInsets>
+            <Insets left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets></TextField>
+      <TextField fx:id="numberTextField" layoutX="27.0" layoutY="192.0" prefWidth="300.0" promptText="Enter Number" stylesheets="@style.css">
+         <opaqueInsets>
+            <Insets left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets></TextField>
       <Button fx:id="cancelButton" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#CancelOnClicked" prefHeight="30.0" prefWidth="151.0" style="-fx-background-color: #008000;" text="Cancel" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -30,16 +39,25 @@
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <PasswordField layoutX="29.0" layoutY="234.0" prefHeight="26.0" prefWidth="294.0" promptText="Enter Password" />
-      <ComboBox fx:id="ComboBox" editable="true" layoutX="31.0" layoutY="271.0" prefHeight="26.0" prefWidth="294.0" promptText="Enter Classroom">
+      <PasswordField layoutX="29.0" layoutY="234.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="294.0" promptText="Enter Password" stylesheets="@style.css">
+         <opaqueInsets>
+            <Insets left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets></PasswordField>
+      <ComboBox fx:id="ComboBox" editable="true" layoutX="31.0" layoutY="271.0" prefHeight="26.0" prefWidth="294.0" promptText="Enter Classroom" stylesheets="@style.css">
          <effect>
             <Reflection />
          </effect>
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor>
+         <opaqueInsets>
+            <Insets left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
       </ComboBox>
-      <ComboBox fx:id="ComboBoxgr" editable="true" layoutX="31.0" layoutY="305.0" prefHeight="26.0" prefWidth="294.0" promptText="Enter Group" />
+      <ComboBox fx:id="ComboBoxgr" editable="true" layoutX="31.0" layoutY="305.0" prefHeight="26.0" prefWidth="294.0" promptText="Enter Group" stylesheets="@style.css">
+         <opaqueInsets>
+            <Insets left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets></ComboBox>
    </children>
    <opaqueInsets>
       <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
